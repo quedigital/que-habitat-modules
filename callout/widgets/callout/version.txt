@@ -1,0 +1,2 @@
+com.quepublising.widget.callout
+1.0.0

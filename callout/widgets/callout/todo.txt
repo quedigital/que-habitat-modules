@@ -1,0 +1,19 @@
+// TODO: record audio from within widget
+// TODO: inline image library (keystrokes, etc.)
+// TODO: decide on element and formatting requirements (sidebars, tables, etc.)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// DONE: try saving an audio file
+// DONE: default trigger to click
+// DONE: turn off rectangle in the view (if it's off in the editor)
+// DONE: for steps without an image, show a line of text
+// DONE: <p> tags with Callout
+// DONE: trigger: wait-for-audio (how does it work in the Player? I forget... [if there's no rect, it advances after audio plays, per Step.onAudioPlayed])
+// DONE: put the Google Hangouts sample into Habitat
+// DONE: inline-image pattern. not successful [patterns are block-level, it appears]
+// DONE: when adding a new callout, the rect isn't always initialized correctly (ie, loses its size and position)
+// TODONT: full-screen clickables (new trigger type; or trigger without rect?) [I think I was thinking of slides that wait for audio]
+// DONE: Enter as a trigger (iPad?)
+// DONE: added and reorganized asides
+// DONE: text input

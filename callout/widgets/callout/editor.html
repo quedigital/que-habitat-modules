@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Callout Editor</title>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+        <script src="js/edit.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+        <link rel="stylesheet" href="css/edit.css" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body class="editor">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="a well">
+                        <label for="imageFilename">Background Image</label>
+                        <div class="input-group">
+                            <input id="imageFilename" type="text" class="form-control" readonly>
+                            <span class="input-group-btn">
+                                <button id="chooseImage" class="btn btn-primary" type="button">Choose Image</button>
+                                <button id="removeImage" class="btn btn-danger" type="button">Remove Image</button>
+                            </span>
+                        </div>
+
+                        <div class="checkbox">
+                            <label>
+                                <input id="showRect" type="checkbox" value="">
+                                Show Callout Rectangle?
+                            </label>
+                        </div>
+
+	                    <div class="form-group">
+	                        <div class="btn-group">
+	                            <button id="triggerType" type="button" class="btn btn-primary dropdown-toggle btn-block" data-toggle="dropdown">
+	                                Trigger <span class="caret"></span>
+	                            </button>
+	                            <ul id="triggerMenu" class="dropdown-menu" role="menu">
+	                                <li><a href="#">click</a></li>
+	                                <li><a href="#">double-click</a></li>
+	                                <li><a href="#">hover</a></li>
+	                                <li><a href="#">text</a></li>
+		                            <li><a href="#">enter</a></li>
+	                                <li class="divider"></li>
+	                                <li><a href="#">none</a></li>
+	                            </ul>
+	                        </div>
+	                    </div>
+
+	                    <div class="form-group">
+		                    <label for="text-short">Short Callout Text</label>
+		                    <input id="text-short" type="text" class="form-control">
+	                    </div>
+
+	                    <input type="text" id="text-input"/>
+                    </div>
+
+                    <div class="b well">
+                        <label for="audioFilename">Audio Narration</label>
+                        <div class="input-group">
+                            <input id="audioFilename" type="text" class="form-control" readonly>
+                            <span class="input-group-btn">
+                                <button id="chooseAudio" class="btn btn-primary" type="button">Choose Audio</button>
+                                <button id="removeAudio" class="btn btn-danger" type="button">Remove Audio</button>
+                            </span>
+                        </div>
+                        <audio controls>
+                            <source src="">
+                        </audio>
+                    </div>
+
+                    <input id="image" type="file" class="hidden"/>
+                    <input id="audio" type="file" class="hidden"/>
+
+                </div>
+                <div class="col-xs-9">
+                    <div class="editor_pane">
+                        <img class="screenshot"/>
+                        <div class="callout"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

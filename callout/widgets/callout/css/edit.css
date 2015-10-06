@@ -1,0 +1,39 @@
+/* Callout Widget: */
+.editor {
+    margin-top: 1em;
+}
+
+.editor_pane {
+    text-align: center;
+    position: relative;
+}
+
+.callout {
+    position: absolute;
+    border: 4px solid red;
+    top: 25px;
+    left: 25px;
+    width: 100px;
+    height: 50px;
+    box-sizing: content-box;
+    display: none;
+}
+
+.screenshot {
+}
+
+audio {
+    margin: 1em 0;
+}
+
+div.a {
+    background-color: #D4E6EF;
+}
+
+div.b {
+    background-color: #DDEDDF;
+}
+
+#text-input {
+    display: none;
+}
